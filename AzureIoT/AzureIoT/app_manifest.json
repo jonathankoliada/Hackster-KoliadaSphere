@@ -1,0 +1,14 @@
+{
+  "SchemaVersion": 1,
+  "Name": "AzureIoT",
+  "ComponentId": "819255ff-8640-41fd-aea7-f85d34c491d5",
+  "EntryPoint": "/bin/app",
+  "CmdArgs": [ "INSERT-COMMANDARG" ],
+  "Capabilities": {
+    "AllowedConnections": [ "global.azure-devices-provisioning.net", "INSERT-ALLOWED-CONNECTION-STRING" ],
+    "Gpio": [ "$SAMPLE_BUTTON_1", "$SAMPLE_BUTTON_2", "$SAMPLE_LED" ],
+    "DeviceAuthentication": "INSERT-TENANT-ID",
+    "Uart": [ "$SAMPLE_UART" ]
+  },
+  "ApplicationType": "Default"
+}
